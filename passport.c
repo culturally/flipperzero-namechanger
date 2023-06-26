@@ -76,7 +76,7 @@ static void render_callback(Canvas* canvas, void* ctx) {
     canvas_draw_line(canvas, 58, 30, 123, 30);
     canvas_draw_line(canvas, 58, 44, 123, 44);
 	
-	const char* cycleNames[] = {
+    const char* cycleNames[] = {
     "detective",
     "d3t3ctiv3",
     "det3ct1v3",
