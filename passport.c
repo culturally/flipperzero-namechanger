@@ -115,15 +115,6 @@ static void render_callback(Canvas* canvas, void* ctx) {
     // Render the modified cycle name
     canvas_draw_str(canvas, 58, 12, cycleName);
 
-    // ...
-
-    frame_counter++;
-    if (frame_counter >= 0.08 * 60) {  // Adjust the frame rate here (lower values make it faster)
-        frame_counter = 0;
-        current_name_index = (current_name_index + 1) % (sizeof(cycleNames) / sizeof(cycleNames[0]));
-        forward = !forward;
-    }
-
 
     const char* my_name = furi_hal_version_get_name_ptr();
     snprintf(level_str, 20, "Level: %hu", stats->level);
